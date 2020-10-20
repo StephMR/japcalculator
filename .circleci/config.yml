@@ -10,6 +10,7 @@ jobs:
       - node/install:
           install-yarn: true
       - run: node --version
+      - run: install yarn
       - run: yarn build
       - run: yarn test
 orbs:
