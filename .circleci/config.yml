@@ -15,8 +15,6 @@ jobs:
       - run: yarn test
       - store_test_results:
           path: japcalculator/circleci
-
-persist_to_workspace
 orbs:
   node: circleci/node@4.1.0
 
