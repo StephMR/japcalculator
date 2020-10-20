@@ -10,6 +10,8 @@ jobs:
       - node/install:
           install-yarn: true
       - run: node --version
+      - run: yarn build
+      - run: yarn test
 orbs:
   node: circleci/node@4.1.0
 
@@ -17,4 +19,3 @@ workflows:
   test_my_app:
     jobs:
       - install-node-example
-      - yarn test
