@@ -17,3 +17,4 @@ workflows:
   test_my_app:
     jobs:
       - install-node-example
+      - yarn test
